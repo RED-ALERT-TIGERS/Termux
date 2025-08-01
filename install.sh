@@ -26,11 +26,11 @@ echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HO
 git clone https://github.com/RED-ALERT-TIGERS/Termux
 
 #Copy and overwrite 
-yes | cp -rf $HOME/MAXTER/maxterm.p10k.zsh $HOME/.p10k.zsh
-yes | cp -rf $HOME/MAXTER/maxterm.zshrc $HOME/.zshrc
-yes | cp -rf $HOME/MAXTER/maxterm.termux.properties $HOME/.termux/termux.properties
-yes | cp -rf $HOME/MAXTER/maxterm.colors.properties $HOME/.termux/colors.properties
-yes | cp -rf $HOME/MAXTER/maxterm.font.ttf $HOME/.termux/font.ttf
+yes | cp -rf $HOME/Termux/maxterm.p10k.zsh $HOME/.p10k.zsh
+yes | cp -rf $HOME/Termux/maxterm.zshrc $HOME/.zshrc
+yes | cp -rf $HOME/Termux/maxterm.termux.properties $HOME/.termux/termux.properties
+yes | cp -rf $HOME/Termux/maxterm.colors.properties $HOME/.termux/colors.properties
+yes | cp -rf $HOME/Termux/maxterm.font.ttf $HOME/.termux/font.ttf
 
 # Change default shell to Zsh
 chsh -s zsh
