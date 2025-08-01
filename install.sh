@@ -10,7 +10,19 @@ yes | pkg install zsh
 yes | pkg install curl
 yes | pkg install git
 
+# Install Oh My Zsh
+yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# Clone Powerlevel10k theme
+git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# Clone zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.zsh-syntax-highlighting" --depth 1
+
+# Update .zshrc to include zsh-syntax-highlighting
+echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HOME/.zshrc"
+
+# Clone the Termux repository
 git clone https://github.com/RED-ALERT-TIGERS/Termux
 
 #Copy and overwrite 
